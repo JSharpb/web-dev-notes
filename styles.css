@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,600&display=swap');
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+html {
+  font-family: 'Open Sans', arial, sans-serif;
+  color: #dddddd;
+  display: block;
+}
+ 
+h1 {
+  font-weight: 700;
+}
+ 
+::-webkit-scrollbar {
+  width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #370018 20%, #0c0912, #370018 80%);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #203347 20%, #200020, #203347 80%);
+}
+ 
+span.normal-text {
+  font-size: 1rem;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 400;
+  color: #dddddd;
+}
+ 
+a {
+  color: #dddddd
+}
+ 
+a[href*="#"] {
+  text-decoration-line: none;
+}
+ 
+ul {
+  padding: 0;
+}
+ 
+body {
+  margin: 0;
+  background: linear-gradient(285deg, #07070c, #0c0912);
+  background-attachment: fixed;
+}
+ 
+nav {
+  width: 360px;
+  height: 100%;
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+ 
+#title {
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+ 
+#title a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 10.5em;
+  height: 3em;
+}
+ 
+#subtitle {
+  text-align: center;
+  font-size: 1rem;
+  font-family: Montserrat;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  color: #50ffe0;
+}
+ 
+.nav-section {
+  display: block;
+  padding-bottom: 1rem;
+  list-style: none;
+  width: 100%;
+  height: auto;
+  min-height: 64px;
+  border-top: 2px solid #270020;
+}
+ 
+.nav-section:last-of-type {
+  border-bottom: 2px solid #270020;
+}
+ 
+.nav-term:hover {
+  background-color: #470018;
+  cursor: default;
+}
+ 
+.nav-h2:hover {
+  cursor: pointer;
+}
+ 
+.nav-h1 {
+  display: block;
+  margin: 1.5rem auto 1rem;
+  padding: 0.5rem 0;
+  width: 55%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+ 
+.nav-sub1 > li {
+  display: block;
+  list-style: none;
+}
+ 
+.nav-sub1 > li:first-child .nav-h2 {
+  margin-top: 1.5rem;
+  padding-top: 0.3rem;
+}
+ 
+.nav-h2 {
+  display: block;
+  padding-left: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+}
+ 
+.nav-sub2 > li {
+  list-style-type: none;
+}
+ 
+.nav-sub2 > li::before {
+  float: left;
+  margin-left: 3.1rem;
+  padding-top: 1px;
+  white-space: pre;
+  content: "-";
+  pointer-events: none;
+}
+ 
+.nav-term {
+  display: block;
+  padding-left: 4rem;
+  padding-top: 1px;
+  height: 25px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+ 
+main {
+  min-width: 300px;
+  display: block;
+  padding: 2rem;
+  margin-left: 360px;
+  position: absolute;
+  width: calc(100% - 360px);
+}
+ 
+section {
+  display: block;
+  width: 100%;
+}
+ 
+.section-title,
+.term-group-h,
+.term {
+  scroll-margin-top: 2.4rem;
+}
+ 
+.section-title {
+  text-align: center;
+}
+ 
+.section-title:not(section:first-child .section-title) {
+  margin-top: 3rem;
+}
+ 
+p:first-child {
+  margin-top: 2.5rem;
+}
+ 
+.term-group-h {
+  margin: 5rem 0 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-decoration-skip-ink: all;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 0.1rem;
+}
+ 
+.section-title + .term-group-h {
+  margin-top: 2rem;
+}
+ 
+.term {
+  margin: 3rem 0 0.3rem;
+  font-size: 1.05rem;
+}
+ 
+.proper-syntax,
+code {
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  color: #c8c8c0;
+}
+ 
+.code-example {
+  max-width: 675px;
+  padding: 0.5rem 1.8rem;
+  background-color: #150b30;
+  border-radius: 5px;
+}
+ 
+.code-example code {
+  line-height: 1.2rem;
+}
+ 
+article p {
+  text-indent: 2rem;
+  line-height: 1.5rem;
+}
+ 
+.ul-header {
+  text-indent: 0;
+  font-weight: 500;
+  font-style: italic;
+}
+ 
+article ul {
+  padding-left: 1.5rem;
+  line-height: 22px;
+}
+ 
+article ul li {
+  padding: 0.3rem 0 0.3rem 0.5rem;
+}

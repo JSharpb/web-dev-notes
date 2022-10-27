@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Development Documentation</title>
+    <meta name="description" content="My current and rapidly growing scope of knowledge on my journey to becoming a talented and disciplined web developer" />
+    <meta name="viewport" content="width=device-width, initial-scale" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="table-of-contents">
+      <header>
+        <h1 id="title" href="#top"><a href="#top">Web Development<br />Documentation</a></h1>
+        <h2 id="subtitle">Jordan Birdsong</h2>
+      </header>
+      <li class="nav-section">
+        <a class="nav-link nav-h1" href="#introduction">Introduction</a>
+      </li>
+      <li class="nav-section">
+        <a class="nav-link nav-h1" href="#HTML-Elements">HTML Elements</a>
+        <ul class="nav-sub1">
+          <li>
+            <a class="nav-link nav-h2" href="#basics">Basics</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#html">HTML</a></li>
+              <li><a class="nav-link nav-term" href="#head">Head</a></li>
+              <li><a class="nav-link nav-term" href="#body">Body</a></li>
+              <li><a class="nav-link nav-term" href="#main">Main</a></li>
+              <li><a class="nav-link nav-term" href="#header">Header</a></li>
+              <li><a class="nav-link nav-term" href="#div">Div</a></li>
+              <li><a class="nav-link nav-term" href="#section">Section</a></li>
+              <li><a class="nav-link nav-term" href="#footer">Footer</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#text-formatting">Text Formatting</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#style">Style</a></li>
+              <li><a class="nav-link nav-term" href="#headings">Headings</a></li>
+              <li><a class="nav-link nav-term" href="#paragraph">Paragragh</a></li>
+              <li><a class="nav-link nav-term" href="#emphasis">Emphasis</a></li>
+              <li><a class="nav-link nav-term" href="#italicize">Italicize</a></li>
+              <li><a class="nav-link nav-term" href="#strong">Strong</a></li>
+              <li><a class="nav-link nav-term" href="#embolden">Embolden</a></li>
+              <li><a class="nav-link nav-term" href="#idiomatic-text">Idiomatic Text</a></li>
+              <li><a class="nav-link nav-term" href="#span">Span</a></li>
+              <li><a class="nav-link nav-term" href="#line-break">Line Break</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#lists">Lists</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#unordered-list">Unordered List</a></li>
+              <li><a class="nav-link nav-term" href="#ordered-list">Ordered List</a></li>
+              <li><a class="nav-link nav-term" href="#list-item">List Item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#figure-pair-elements">Figure Pair Elements</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#figure">Figure</a></li>
+              <li><a class="nav-link nav-term" href="#figure-caption">Figure Caption</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#tables">Tables</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#table">Table</a></li>
+              <li><a class="nav-link nav-term" href="#caption">Caption</a></li>
+              <li><a class="nav-link nav-term" href="#table-head">Table Head</a></li>
+              <li><a class="nav-link nav-term" href="#table-body">Table Body</a></li>
+              <li><a class="nav-link nav-term" href="#table-row">Table Row</a></li>
+              <li><a class="nav-link nav-term" href="#header-cell">Header Cell</a></li>
+              <li><a class="nav-link nav-term" href="#data-cell">Data Cell</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#user-input">User Input</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#form">Form</a></li>
+              <li><a class="nav-link nav-term" href="#input">Input</a></li>
+              <li><a class="nav-link nav-term" href="#text-area">Text Area</a></li>
+              <li><a class="nav-link nav-term" href="#button">Button</a></li>
+              <li><a class="nav-link nav-term" href="#label">Label</a></li>
+              <li><a class="nav-link nav-term" href="#fieldset">Fieldset</a></li>
+              <li><a class="nav-link nav-term" href="#legend">Legend</a></li>
+              <li><a class="nav-link nav-term" href="#select">Select</a></li>
+              <li><a class="nav-link nav-term" href="#option">Option</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#miscellaneous">Miscellaneous</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#meta">Meta</a></li>
+              <li><a class="nav-link nav-term" href="#title">Title</a></li>
+              <li><a class="nav-link nav-term" href="#link">Link</a></li>
+              <li><a class="nav-link nav-term" href="#anchor">Anchor</a></li>
+              <li><a class="nav-link nav-term" href="#image">Image</a></li>
+              <li><a class="nav-link nav-term" href="#article">Article</a></li>
+              <li><a class="nav-link nav-term" href="#horizontal-rule">Horizontal Rule</a></li>
+              <li><a class="nav-link nav-term" href="#address">Address</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <a class="nav-link nav-h1" href="#HTML-Attributes">HTML Attributes</a>
+        <ul class="nav-sub1">
+          <li>
+            <a class="nav-link nav-h2" href="#meta-data">Meta Data</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#language">Language</a></li>
+              <li><a class="nav-link nav-term" href="#character-set">Character Set</a></li>
+              <li><a class="nav-link nav-term" href="#content">Content</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#self-referencing">Self-Referencing</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#data-name">Data Name</a></li>
+              <li><a class="nav-link nav-term" href="#element-identity">Element Identity</a></li>
+              <li><a class="nav-link nav-term" href="#element-value">Element Value</a></li>
+              <li><a class="nav-link nav-term" href="#for">For</a></li>
+              <li><a class="nav-link nav-term" href="#class">Class</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#aria">ARIA</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#role">Role</a></li>
+              <li><a class="nav-link nav-term" href="#aria-labelled-by">ARIA: Labelled By</a></li>
+              <li><a class="nav-link nav-term" href="#aria-hidden">ARIA: Hidden</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#hyperlinks">Hyperlinks</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#target">Target</a></li>
+              <li><a class="nav-link nav-term" href="#hyperlink-reference">Hyperlink Reference</a></li>
+              <li><a class="nav-link nav-term" href="#relationship">Relationship</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#media">Media</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#source">Source</a></li>
+              <li><a class="nav-link nav-term" href="#alternative-to-media">Alternative to Media</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#responsivity">Responsivity</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#access-keys">Access Keys</a></li>
+              <li><a class="nav-link nav-term" href="#media-rule">Media Rule</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#general-user-input">General User Input</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#type">Type</a></li>
+              <li><a class="nav-link nav-term" href="#required-input">Required Input</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#form-submission">Form Submission</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#action">Action</a></li>
+              <li><a class="nav-link nav-term" href="#method">Method</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#textbox">Textbox</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#minimum-length">Minimum Length</a></li>
+              <li><a class="nav-link nav-term" href="#maximum-length">Maximum Length</a></li>
+              <li><a class="nav-link nav-term" href="#pattern">Pattern</a></li>
+              <li><a class="nav-link nav-term" href="#minimum-value">Minimum Value</a></li>
+              <li><a class="nav-link nav-term" href="#maximum-value">Maximum Value</a></li>
+              <li><a class="nav-link nav-term" href="#placeholder-text">Placeholder Text</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#selection">Selection</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#disable-selection-option">Disable Selection Option</a></li>
+              <li><a class="nav-link nav-term" href="#select-option-by-default">Select Option by Default</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#radio-checkbox">Radio/Checkbox</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#check-input-by-default">Check Input by Default</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#text-area">Text Area</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#rows">Rows</a></li>
+              <li><a class="nav-link nav-term" href="#columns">Columns</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <a class="nav-link nav-h1" href="#CSS-Selectors">CSS Selectors</a>
+        <ul class="nav-sub1">
+          <li>
+            <a class="nav-link nav-h2" href="#by-attribute">By Attribute</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#type-selector">Type Selector</a></li>
+              <li><a class="nav-link nav-term" href="#class-selector">Class Selector</a></li>
+              <li><a class="nav-link nav-term" href="#id-selector">ID Selector</a></li>
+              <li><a class="nav-link nav-term" href="#pseudo-class">Pseudo-Class</a></li>
+              <li><a class="nav-link nav-term" href="#pseudo-element">Pseudo-Element</a></li>
+              <li><a class="nav-link nav-term" href="#attribute-selector">Attribute Selector</a></li>
+              <li><a class="nav-link nav-term" href="#tilda-attribute-selector">" ~ " Attribute Selector</a></li>
+            </ul>
+          <li>
+            <a class="nav-link nav-h2" href="#by-relation">By Relation</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#asterisk-selector">" * " Selector</a></li>
+              <li><a class="nav-link nav-term" href="#tilda-selector">" ~ " Selector</a></li>
+            </ul>
+          </li>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <a class="nav-link nav-h1" href="#Pseudo-Selectors">Pseudo-Selectors</a>
+        <ul class="nav-sub1">
+          <li>
+            <a class="nav-link nav-h2" href="#pseudo-classes">Pseudo-Classes</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#first-of-type">:first-of-type</a></li>
+              <li><a class="nav-link nav-term" href="#last-of-type">:last-of-type</a></li>
+              <li><a class="nav-link nav-term" href="#nth-of-type">:nth-of-type</a></li>
+              <li><a class="nav-link nav-term" href="#first-child">:first-child</a></li>
+              <li><a class="nav-link nav-term" href="#not">:not</a></li>
+              <li><a class="nav-link nav-term" href="#visited">:visited</a></li>
+              <li><a class="nav-link nav-term" href="#hover">:hover</a></li>
+              <li><a class="nav-link nav-term" href="#active">:active</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link nav-h2" href="#pseudo-elements">Pseudo-Elements</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#before">::before</a></li>
+              <li><a class="nav-link nav-term" href="#after">::after</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <a class="nav-link nav-h1" href="#CSS-Properties">CSS Properties</a>
+        <ul class="nav-sub1">
+          <li>
+            <a class="nav-link nav-h2" href="#meta-data">Meta Data</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term" href="#language">Language</a></li>
+              <li><a class="nav-link nav-term" href="#columns">Columns</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <a class="nav-link nav-h1" href="#CSS-Functions">CSS Functions</a>
+        <ul class="nav-sub1">
+          <li>
+            <a class="nav-link nav-h2">Meta Data</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term">Language</a></li>
+              <li><a class="nav-link nav-term">Columns</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <a class="nav-link nav-h1" href="#Conventions">Conventions</a>
+        <ul class="nav-sub1">
+          <li>
+            <a class="nav-link nav-h2">Meta Data</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term">Language</a></li>
+              <li><a class="nav-link nav-term">Columns</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <a class="nav-link nav-h1" href="#Common-Issues">Common Issues</a>
+        <ul class="nav-sub1">
+          <li>
+            <a class="nav-link nav-h2">Meta Data</a>
+            <ul class="nav-sub2">
+              <li><a class="nav-link nav-term">Language</a></li>
+              <li><a class="nav-link nav-term">Columns</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </nav>
+    <main>
+      <section>
+        <h1 id="introduction" class="section-title">Introduction</h1>
+        <article>
+          <p>
+            Hello, and welcome! This webpage is being designed as a project for the Responsive Web Design course on <a target="blank" href="https://freecodecamp.org">freeCodeCamp.org</a>. The project criteria requires much less than I plan to include; however, I am going to leave this page unfinished knowing I will learn enough later in my studies to make its creation much more efficient.
+          </p>
+          <p>
+            When the page is completed, it will act as a portfolio of sorts to represent every concept I have learned during my journey towards a career in Web Development. As of now, the content is lacking compared to a Google Doc I've made for the same purpose and is not an accurate representation of my knowledge.
+          </p>
+          <p class="ul-header">
+             My plans for the page are as follows:
+          </p>
+          <ul>
+            <li>Add a form only I can submit that will automatically format the entered information accordingly</li>
+            <li>Add a form any user can use to submit a recommended entry</li>
+            <li>Add a "Contact" form</li>
+            <li>Add a "Light" theme</li>
+            <li>Update user accessibility</li>
+            <li>Use Jquery to change the information under <i class="proper-syntax">&#60;main&#62;</i> after selecting a term in the <i class="proper-syntax">&#60;nav&#62;</i> element rather than linking the headers</li>
+            <li>Adjust the formatting of <i class="proper-syntax">&#60;main&#62;</i> to include a &#160;<i class="proper-syntax">max-width:</i> property, so the page doesn't flatten too much when in fullscreen</li>
+            <li>Add a @media Query to support mobile screens</li>
+          </ul
+        </article>
+      </section>
+      <section>
+        <h1 id="HTML-Elements" class="section-title">HTML Elements</h1>
+        <h2 id="basics" class="term-group-h">Basics</h2>
+        <article>
+          <h3 id="html" class="term">HTML</h3>
+          <i class="proper-syntax">&#60;html&#62;</i>
+          <p>This element will always encapsulate the entirety of your HTML code. Everything except for your <i class="proper-syntax">&#60;!DOCTYPE html&#62;</i> element.</p>
+          <ul>
+            <li>100% required</li>
+            <li>Parent to all other elements (barring <i class="proper-syntax">&#60;!DOCTYPE html&#62;)</i></li>
+          </ul>
+          <div class="code-example">
+          <code>
+            &#60;!DOCTYPE html&#62;<br />
+            &#60;html&#62;<br />
+            &#160; &#60;everything-else /&#62;<br />
+            &#60;/html&#62;
+          </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="head" class="term">Head</h3>
+          <i class="proper-syntax">&#60;head&#62;</i>
+          <p>This element is reserved to include information about the page that is to be understood by both browsers and search engines.</p>
+          <ul>
+            <li>Always placed before the <i class="proper-syntax">&#60;body&#62;</i> element</li>
+            <li>Contains meta data</li>
+          </ul>
+          <div class="code-example">
+          <code>
+            &#60;!DOCTYPE html&#62;<br />
+            &#60;html&#62;<br />
+            &#160; &#60;head&#62;<br />
+            &#160; &#160; &#60;all-of-your-meta-data /&#62;<br />
+            &#160; &#60;head&#62;<br />
+            &#160; &#60;everything-else&#62 /&#62;<br />
+            &#60;/html&#62;
+          </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="body" class="term">Body</h3>
+          <i class="proper-syntax">&#60;body&#62;</i>
+          <p>This element will contain all of the content of the page, both visual and interactable.</p>
+          <div class="code-example">
+            <code>
+            &#60;!DOCTYPE html&#62;<br />
+            &#60;html&#62;<br />
+            &#160; &#60;head&#62;<br />
+            &#160; &#160; &#60;all-of-your-meta-data /&#62;<br />
+            &#160; &#60;head&#62;<br />
+            &#160; &#60;body&#62;<br />
+            &#160; &#160; &#60;everything-else /&#62;<br />
+            &#160; &#60;/body&#62;<br />
+            &#60;/html&#62;
+            </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="main" class="term">Main</h3>
+          <i class="proper-syntax">&#60;main&#62;</i>
+          <p>This element contains the primary content of the <i class="proper-syntax">&#60;body&#62;</i> of the page. It typically excludes the <i class="proper-syntax">&#60;nav&#62;</i> element</p>
+          <ul>
+            <li>Only one per page</li>
+          </ul>
+          <div class="code-example">
+            <code>
+              &#60;!DOCTYPE html&#62;<br />
+              &#60;html&#62;<br />
+              &#160; &#60;head&#62;<br />
+              &#160; &#160; &#60;all-of-your-meta-data /&#62;<br />
+              &#160; &#60;/head&#62;<br />
+              &#160; &#60;body&#62;<br />
+              &#160; &#160; &#60;other-content /&#62;<br />
+              &#160; &#160; &#60;main&#62;<br />
+              &#160; &#160; &#160; &#60;primary-content /&#62;<br />
+              &#160; &#160; &#60;/main&#62;<br />
+              &#160; &#160; &#60;other-content /&#62;<br />
+              &#160; &#60;/body&#62;<br />
+              &#60;/html&#62;
+            </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="header" class="term">Header</h3>
+          <i class="proper-syntax">&#60;header&#62;</i>
+          <p>This element introduces the content of the page and contains a navigation menu in some cases.</p>
+          <ul>
+            <li>Placed before the <i class="proper-syntax">&#60;main&#62;</i> element</li>
+          </ul>
+          <div class="code-example">
+            <code>
+              &#60;!DOCTYPE html&#62;<br />
+              &#60;html&#62;<br />
+              &#160; &#60;head&#62;<br />
+              &#160; &#160; &#60;all-of-your-meta-data /&#62;<br />
+              &#160; &#60;/head&#62;<br />
+              &#160; &#60;body&#62;<br />
+              &#160; &#160; &#60;header&#62;<br />
+              &#160; &#160; &#160; &#60;title-and-navigation /&#62;<br />
+              &#160; &#160; &#60;/header&#62;<br />
+              &#160; &#160; &#60;main&#62;<br />
+              &#160; &#160; &#160; &#60;primary-content /&#62;<br />
+              &#160; &#160; &#60;/main&#62;<br />
+              &#160; &#160; &#60;other-content /&#62;<br />
+              &#160; &#60;/body&#62;<br />
+              &#60;/html&#62;
+            </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="div" class="term">Div</h3>
+          <i class="proper-syntax">&#60;div&#62;</i>
+          <p>This element is incredibly versitile. It can be used to create shapes or, more typically, as a container for content on a page.</p>
+          <ul>
+            <li>Used primarily for design/layout purposes</li>
+            <li>Could potentially act as a page within a page</li>
+          </ul>
+          <div class="code-example">
+            <code>
+              &#60;!DOCTYPE html&#62;<br />
+              &#60;html&#62;<br />
+              &#160; &#60;head&#62;<br />
+              &#160; &#160; &#60;all-of-your-meta-data /&#62;<br />
+              &#160; &#60;/head&#62;<br />
+              &#160; &#60;body&#62;<br />
+              &#160; &#160; &#60;header&#62;<br />
+              &#160; &#160; &#160; &#60;title-and-navigation /&#62;<br />
+              &#160; &#160; &#60;/header&#62;<br />
+              &#160; &#160; &#60;main&#62;<br />
+              &#160; &#160; &#160; &#60;div&#62;&#60;/div&#62;<br />
+              &#160; &#160; &#60;/main&#62;<br />
+              &#160; &#160; &#60;other-content /&#62;<br />
+              &#160; &#60;/body&#62;<br />
+              &#60;/html&#62;
+            </code>
+          </div>
+          <p>The above example places the <i class="proper-syntax">&#60;div&#62;</i> element within <i class="proper-syntax">&#60;main&#62;</i>.</p>
+        </article>
+        <article>
+          <h3 id="section" class="term">Section</h3>
+          <i class="proper-syntax">&#60;section&#62;</i>
+          <p>This element helps to organize the <i class="proper-syntax">&#60;body&#62;</i>'s content for styling as well as accessibility purposes.</p>
+          <div class="code-example">
+            <code>
+              &#60;!DOCTYPE html&#62;<br />
+              &#60;html&#62;<br />
+              &#160; &#60;head&#62;<br />
+              &#160; &#160; &#60;all-of-your-meta-data /&#62;<br />
+              &#160; &#60;/head&#62;<br />
+              &#160; &#60;body&#62;<br />
+              &#160; &#160; &#60;header&#62;<br />
+              &#160; &#160; &#160; &#60;title-and-navigation /&#62;<br />
+              &#160; &#160; &#60;/header&#62;<br />
+              &#160; &#160; &#60;main&#62;<br />
+              &#160; &#160; &#160; &#60;div&#62;<br />
+              &#160; &#160; &#160; &#160; &#60;section&#62;<br />
+              &#160; &#160; &#160; &#160; &#160; &#60;relavent-content /&#62;<br />
+              &#160; &#160; &#160; &#160; &#60;/section&#62;<br />
+              &#160; &#160; &#160; &#60;/div&#62;<br />
+              &#160; &#160; &#60;/main&#62;<br />
+              &#160; &#160; &#60;other-content /&#62;<br />
+              &#160; &#60;/body&#62;<br />
+              &#60;/html&#62;
+            </code>
+          </div>
+          <p>You may have noticed that the <i class="proper-syntax">&#60;section&#62;</i> element was nested into the <i class="proper-syntax">&#60;div&#62;</i> here. This would be an example of using a <i class="proper-syntax">&#60;div&#62;</i> element as a container and is completely optional.</p>
+        </article>
+        <article>
+          <h3 id="footer" class="term">Footer</h3>
+          <i class="proper-syntax">&#60;footer&#62;</i>
+          <p>This element typically contains information such as copyright, references, and/or the <i class="proper-syntax">&#60;address&#62;</i> of a company.</p>
+          <ul>
+            <li>Always placed at the bottom of a page</li>
+            <li>After <i class="proper-syntax">&#60;main&#62;</i></li>
+          </ul>
+          <div class="code-example">
+            <code>
+              &#60;!DOCTYPE html&#62;<br />
+              &#60;html&#62;<br />
+              &#160; &#60;head&#62;<br />
+              &#160; &#160; &#60;all-of-your-meta-data /&#62;<br />
+              &#160; &#60;/head&#62;<br />
+              &#160; &#60;body&#62;<br />
+              &#160; &#160; &#60;header&#62;<br />
+              &#160; &#160; &#160; &#60;title-and-navigation /&#62;<br />
+              &#160; &#160; &#60;/header&#62;<br />
+              &#160; &#160; &#60;main&#62;<br />
+              &#160; &#160; &#160; &#60;div&#62;<br />
+              &#160; &#160; &#160; &#160; &#60;section&#62;<br />
+              &#160; &#160; &#160; &#160; &#160; &#60;relavent-content /&#62;<br />
+              &#160; &#160; &#160; &#160; &#60;/section&#62;<br />
+              &#160; &#160; &#160; &#60;/div&#62;<br />
+              &#160; &#160; &#60;/main&#62;<br />
+              &#160; &#160; &#60;footer&#62;<br />
+              &#160; &#160; &#160; &#60;page-related-information /&#62;<br />
+              &#160; &#160; &#60;/footer&#62;<br />
+              &#160; &#60;/body&#62;<br />
+              &#60;/html&#62;
+            </code>
+          </div>
+        </article>
+        <h2 id="text-formatting" class="term-group-h">Text Formatting</h2>
+        <article>
+          <h3 id="style" class="term">Style</h3>
+          <i class="proper-syntax">&#60;style&#62;</i>
+          <p>This element allows you to nest CSS code without the need to link a .css file. It is typically used only when very little styling is needed.</p>
+          <ul>
+            <li>Uses syntax identical to that of a .css file</li>
+            <li>Is placed within the <i class="proper-syntax">&#60;head&#62;</i> element</li>
+          </ul>
+          <div class="code-example">
+          <code>
+            &#60;!DOCTYPE html&#62;<br />
+            &#60;html&#62;<br />
+            &#160; &#60;head&#62;<br />
+            &#160; &#160; &#60;style&#62;<br />
+            &#160; &#160; &#160; selector {<br />
+            &#160; &#160; &#160; property: value;<br />
+            &#160; &#160; &#160; property: value;<br />
+            &#160; &#160; &#160; }<br />
+            <br />
+            &#160; &#160; &#160; selector {<br />
+            &#160; &#160; &#160; property: value;<br />
+            &#160; &#160; &#160; property: value;<br />
+            &#160; &#160; &#160; }<br />
+            &#160; &#160; &#60;/style&#62;<br />
+            &#160; &#60;/head&#62;<br />
+            &#60;/html&#62;
+          </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="headings" class="term">Headings</h3>
+          <i class="proper-syntax">&#60;h1&#62;<span class="normal-text"> through </span>&#60;h6&#62;</i>
+          <p>These elements are used to format text for headings. <i class="proper-syntax">&#60;h1&#62;</i> and <i class="proper-syntax">&#60;h2&#62;</i> elements are often used within <i class="proper-syntax">&#60;header&#62;</i> elements.</p>
+          <ul>
+            <li>Ranked by priority and font size</li>
+            <li><i class="proper-syntax">&#60;h1&#62;</i> is bigger than <i class="proper-syntax">&#60;h2&#62;</i>, is bigger than <i class="proper-syntax">&#60;h3&#62;</i>, and so on...</li>
+            <li>Text is automatically emboldened</li>
+          </ul>
+          <div class="code-example">
+            <code>
+              &#60;!DOCTYPE html&#62;<br />
+              &#60;html&#62;<br />
+              &#160; &#60;body&#62;<br />
+              &#160; &#60;/body&#62;<br />
+              &#60;/html&#62;
+            </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="" class="term"></h3>
+          <i class="proper-syntax"></i>
+          <p></p>
+          <ul>
+            <li></li>
+          </ul>
+          <div class="code-example">
+            <code>
+              
+            </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="" class="term"></h3>
+          <i class="proper-syntax"></i>
+          <p></p>
+          <ul>
+            <li></li>
+          </ul>
+          <div class="code-example">
+            <code>
+              
+            </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="" class="term"></h3>
+          <i class="proper-syntax"></i>
+          <p></p>
+          <ul>
+            <li></li>
+          </ul>
+          <div class="code-example">
+            <code>
+              
+            </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="" class="term"></h3>
+          <i class="proper-syntax"></i>
+          <p></p>
+          <ul>
+            <li></li>
+          </ul>
+          <div class="code-example">
+            <code>
+              
+            </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="" class="term"></h3>
+          <i class="proper-syntax"></i>
+          <p></p>
+          <ul>
+            <li></li>
+          </ul>
+          <div class="code-example">
+            <code>
+              
+            </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="" class="term"></h3>
+          <i class="proper-syntax"></i>
+          <p></p>
+          <ul>
+            <li></li>
+          </ul>
+          <div class="code-example">
+            <code>
+              
+            </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="" class="term"></h3>
+          <i class="proper-syntax"></i>
+          <p></p>
+          <ul>
+            <li></li>
+          </ul>
+          <div class="code-example">
+            <code>
+              
+            </code>
+          </div>
+        </article>
+        <article>
+          <h3 id="" class="term"></h3>
+          <i class="proper-syntax"></i>
+          <p></p>
+          <ul>
+            <li></li>
+          </ul>
+          <div class="code-example">
+            <code>
+              
+            </code>
+          </div>
+        </article>
+        <h2 class="term-group-h">Basics</h2>
+        <article>
+          <h3 id="basics" class="term">HTML</h3>
+          <i class="proper-syntax">&#60;html&#62;</i>
+          <div class="code-example">
+          <code>Hello</code>
+          </div>
+        </article>
+        <h2 class="term-group-h">Basics</h2>
+        <article>
+          <h3 id="basics" class="term">HTML</h3>
+          <i class="proper-syntax">&#60;html&#62;</i>
+          <div class="code-example">
+          <code>Hello</code>
+          </div>
+        </article>
+        <h2 class="term-group-h">Basics</h2>
+        <article>
+          <h3 id="basics" class="term">HTML</h3>
+          <i class="proper-syntax">&#60;html&#62;</i>
+          <div class="code-example">
+          <code>Hello</code>
+          </div>
+        </article>
+        <h2 class="term-group-h">Basics</h2>
+        <article>
+          <h3 id="basics" class="term">HTML</h3>
+          <i class="proper-syntax">&#60;html&#62;</i>
+          <div class="code-example">
+          <code>Hello</code>
+          </div>
+        </article>
+        <h2 class="term-group-h">Basics</h2>
+        <article>
+          <h3 id="basics" class="term">HTML</h3>
+          <i class="proper-syntax">&#60;html&#62;</i>
+          <div class="code-example">
+          <code>Hello</code>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h1 id="HTML-Attributes" class="section-title">HTML Attributes</h1>
+      </section>
+      <section>
+        <h1 id="CSS-Selectors" class="section-title">CSS Selectors</h1>
+      </section>
+      <section>
+        <h1 id="CSS-Properties" class="section-title">CSS Properties</h1>
+      </section>
+      <section>
+        <h1 id="CSS-Functions" class="section-title">CSS Functions</h1>
+      </section>
+      <section>
+        <h1 id="Conventions" class="section-title">Conventions</h1>
+      </section>
+      <section>
+        <h1 id="Common-Issues" class="section-title">Common Issues</h1>
+        <article>
+          <h3 id="body" class="term"></h3>
+          <i class="proper-syntax"></i>
+          <p></p>
+          <div class="code-example">
+            <code>
+ 
+            </code>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
